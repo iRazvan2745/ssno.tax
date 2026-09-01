@@ -1122,6 +1122,15 @@
       "documentation_url": "https://docs.lancommander.app/Server/Settings/Authentication/Overview"
     },
     {
+      "name": "Trilium Notes",
+      "category": "Notes & knowledge management ",
+      "project_url": "https://triliumnotes.org/",
+      "logo_url": "https://cdn.simpleicons.org/trilium",
+      "license": "AGPL-3.0  ",
+      "description": "Trilium Notes is a free and open-source, cross-platform hierarchical note taking application with focus on building large personal knowledge bases.",
+      "documentation_url": "https://github.com/TriliumNext/Trilium/blob/main/docs/User%20Guide/User%20Guide/Installation%20%26%20Setup/Server%20Installation/Signing%20in%20with%20OpenID%20Connect.md"
+    },
+    {
       "name": "WYGIWYH",
       "category": "Personal finance & household management",
       "project_url": "https://github.com/eitchtee/WYGIWYH",

@@ -4,7 +4,7 @@
     "These projects can be self-hosted and provide basic OIDC/OAuth2 login without buying an SSO add-on.",
     "You still need an OIDC identity provider, such as Keycloak, authentik, or Zitadel.",
     "Hosting, support, advanced provisioning, and group-sync features may have separate commercial offerings. Verify the feature against the version you deploy.",
-    "Outline, Directus, HashiCorp Vault & Boundary are included because their free self-hosted edition includes OIDC, but their current BSL and MSCL licenses are not OSI-approved open source"
+    "Outline, Directus, Dockhand, HashiCorp Vault & Boundary are included because their free self-hosted edition includes OIDC, but their current BSL and MSCL licenses are not OSI-approved open source"
   ],
   "applications": [
     {
@@ -1138,6 +1138,36 @@
       "license": "AGPL-3.0",
       "description": "A no-budget, multi-currency personal finance tracker with a built-in dollar-cost averaging tracker whose login can be delegated to an external OpenID Connect provider via django-allauth, configured through environment variables.",
       "documentation_url": "https://github.com/eitchtee/WYGIWYH#oidc-configuration"
+    },
+    {
+      "name": "Actual Budget",
+      "category": "Personal finance & household management",
+      "project_url": "https://actualbudget.org/",
+      "github_url": "https://github.com/actualbudget/actual",
+      "logo_url": "https://cdn.simpleicons.org/actualbudget",
+      "license": "MIT",
+      "description": "A fast, privacy-focused envelope budgeting app whose self-hosted server supports signing in through an OpenID Connect (or generic OAuth2) provider, the recommended setup for multiple users.",
+      "documentation_url": "https://actualbudget.org/docs/config/oauth-auth/"
+    },
+    {
+      "name": "Dockhand",
+      "category": "Container management",
+      "project_url": "https://dockhand.pro",
+      "github_url": "https://github.com/Finsys/dockhand",
+      "logo_url": "https://raw.githubusercontent.com/Finsys/dockhand/main/src/lib/assets/favicon.svg",
+      "license": "BSL-1.1",
+      "description": "A self-hosted Docker management platform with OIDC/SSO login included free in every tier (LDAP, MFA, and RBAC are the paid Enterprise add-ons), though its BSL 1.1 license is not open source.",
+      "documentation_url": "https://dockhand.pro/manual#appendix-oidc"
+    },
+    {
+      "name": "PatchMon",
+      "category": "Virtualization & infrastructure",
+      "project_url": "https://patchmon.net/",
+      "github_url": "https://github.com/PatchMon/PatchMon",
+      "logo_url": "https://raw.githubusercontent.com/PatchMon/PatchMon/main/frontend/public/assets/logo_square_default.svg",
+      "license": "AGPL-3.0",
+      "description": "A self-hosted Linux patch management and fleet automation platform with OpenID Connect single sign-on, including automatic user provisioning, group-to-role mapping, and SSO-only enforcement.",
+      "documentation_url": "https://docs.patchmon.net/docs/patchmon-admin-guide#oidc--sso"
     }
   ]
 }

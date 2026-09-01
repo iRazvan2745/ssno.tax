@@ -800,13 +800,14 @@
       "documentation_url": "https://listmonk.app/docs/oidc/"
     },
     {
-      "name": "Pingvin Share",
+      "name": "Pingvin Share X",
       "category": "File sharing",
-      "project_url": "https://stonith404.github.io/pingvin-share/",
-      "github_url": "https://github.com/stonith404/pingvin-share",
+      "project_url": "https://smp46.github.io/pingvin-share-x/",
+      "github_url": "https://github.com/smp46/pingvin-share-x",
+      "logo_url": "https://raw.githubusercontent.com/smp46/pingvin-share-x/main/frontend/public/img/logo.png",
       "license": "BSD-2-Clause",
-      "description": "A self-hosted file-sharing platform that includes OpenID Connect and LDAP authentication alongside local accounts.",
-      "documentation_url": "https://stonith404.github.io/pingvin-share/setup/oauth2login"
+      "description": "The actively maintained fork of the archived Pingvin Share file-sharing platform, carrying on its OpenID Connect and LDAP authentication alongside local accounts.",
+      "documentation_url": "https://smp46.github.io/pingvin-share-x/setup/oauth2login"
     },
     {
       "name": "Erugo",

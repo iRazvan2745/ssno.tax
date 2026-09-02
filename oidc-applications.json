@@ -1178,6 +1178,17 @@
       "license": "AGPL-3.0",
       "description": "A self-hosted Linux patch management and fleet automation platform with OpenID Connect single sign-on, including automatic user provisioning, group-to-role mapping, and SSO-only enforcement.",
       "documentation_url": "https://docs.patchmon.net/docs/patchmon-admin-guide#oidc--sso"
+    },
+    {
+      "name": "Pelican",
+      "category": "Game server management",
+      "oidc_status": "extension",
+      "project_url": "https://pelican.dev/",
+      "github_url": "https://github.com/pelican/panel",
+      "logo_url": "https://raw.githubusercontent.com/pelican/panel/main/public/pelican.svg",
+      "license": "AGPL-3.0",
+      "description": "A self-hosted game server management panel with free OAuth login and a first-party generic OIDC plugin that supports any custom OpenID Connect provider.",
+      "documentation_url": "https://github.com/pelican/plugins/tree/main/generic-oidc-providers"
     }
   ]
 }

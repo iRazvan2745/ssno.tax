@@ -16,6 +16,11 @@
       "name": "Portainer BE",
       "project_url": "https://www.portainer.io/",
       "reason": "The edition with full SSO features is proprietary and only free for up to 3 nodes for non-commercial use; the open-source Portainer CE is listed instead."
+    },
+    {
+      "name": "Stirling PDF",
+      "project_url": "https://stirlingpdf.com/",
+      "reason": "OAuth2/OIDC single sign-on requires a paid Server-tier license and SAML requires the Enterprise tier; the free open-source edition does not include SSO."
     }
   ],
   "applications": [
@@ -840,15 +845,6 @@
       "license": "AGPL-3.0",
       "description": "An end-to-end-encrypted collaborative office suite whose self-hosted instance can delegate account creation and login to OpenID Connect identity providers.",
       "documentation_url": "https://docs.cryptpad.org/en/admin_guide/admin_panel.html"
-    },
-    {
-      "name": "Stirling PDF",
-      "category": "Document management",
-      "project_url": "https://stirlingpdf.com/",
-      "github_url": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "license": "MIT",
-      "description": "A self-hosted PDF toolbox with user management that supports OAuth2/OIDC login in the free edition, including auto-creation of users from provider claims.",
-      "documentation_url": "https://docs.stirlingpdf.com/Configuration/Security/OAuth%20SSO%20Configuration/"
     },
     {
       "name": "Xen Orchestra",

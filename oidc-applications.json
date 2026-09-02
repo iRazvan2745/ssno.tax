@@ -1172,7 +1172,7 @@
       "category": "Container management",
       "project_url": "https://dockhand.pro",
       "github_url": "https://github.com/Finsys/dockhand",
-      "logo_url": "https://raw.githubusercontent.com/Finsys/dockhand/main/src/lib/assets/favicon.svg",
+      "logo_url": "https://raw.githubusercontent.com/Finsys/dockhand/main/static/favicon-32x32.png",
       "license": "BSL-1.1",
       "description": "A self-hosted Docker management platform with OIDC/SSO login included free in every tier (LDAP, MFA, and RBAC are the paid Enterprise add-ons), though its BSL 1.1 license is not open source.",
       "documentation_url": "https://dockhand.pro/manual#appendix-oidc"

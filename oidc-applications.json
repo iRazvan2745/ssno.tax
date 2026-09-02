@@ -14,7 +14,7 @@
       "github_url": "https://github.com/grimmory-tools/grimmory",
       "logo_url": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/grimmory.svg",
       "license": "GPL 3",
-      "description": Grimmory is a self-hosted digital library with built-in OpenID Connect authentication, user matching, and optional group sync.",
+      "description": "Grimmory is a self-hosted digital library with built-in OpenID Connect authentication, user matching, and optional group sync.",
       "documentation_url": "https://grimmory.org/docs/authentication/oidc-settings/"
     },
     {

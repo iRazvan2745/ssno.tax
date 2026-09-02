@@ -6,6 +6,18 @@
     "Hosting, support, advanced provisioning, and group-sync features may have separate commercial offerings. Verify the feature against the version you deploy.",
     "Outline, Directus, Dockhand, HashiCorp Vault & Boundary are included because their free self-hosted edition includes OIDC, but their current BSL and MSCL licenses are not OSI-approved open source"
   ],
+  "rejected": [
+    {
+      "name": "Mattermost",
+      "project_url": "https://mattermost.com/",
+      "reason": "OIDC login is only in the free-but-proprietary Entry edition (aimed at teams under 50 users); the open-source Team Edition has no SSO support at all."
+    },
+    {
+      "name": "Portainer BE",
+      "project_url": "https://www.portainer.io/",
+      "reason": "The edition with full SSO features is proprietary and only free for up to 3 nodes for non-commercial use; the open-source Portainer CE is listed instead."
+    }
+  ],
   "applications": [
     {
       "name": "Grimmory",
@@ -752,16 +764,6 @@
       "documentation_url": "https://developer.hashicorp.com/vault/docs/auth/jwt"
     },
     {
-      "name": "Mattermost",
-      "category": "Team chat",
-      "project_url": "https://mattermost.com/",
-      "github_url": "https://github.com/mattermost/mattermost",
-      "logo_url": "https://cdn.simpleicons.org/mattermost",
-      "license": "MIT (open source build) / commercial Enterprise Edition license",
-      "description": "A self-hosted team collaboration platform whose free edition supports generic OpenID Connect providers for account creation and user login, while SAML and AD/LDAP require paid subscriptions.",
-      "documentation_url": "https://docs.mattermost.com/administration-guide/onboard/sso-openidconnect.html"
-    },
-    {
       "name": "Rocket.Chat",
       "category": "Team chat",
       "project_url": "https://www.rocket.chat/",
@@ -1051,6 +1053,16 @@
       "documentation_url": "https://github.com/AtalayaLabs/OxiCloud/blob/main/docs/config/oidc.md"
     },
     {
+      "name": "Trek",
+      "category": "Travel & maps",
+      "project_url": "https://liketrek.com",
+      "github_url": "https://github.com/liketrek/TREK",
+      "logo_url": "https://raw.githubusercontent.com/liketrek/TREK/main/client/public/icons/icon.svg",
+      "license": "AGPL-3.0",
+      "description": "A self-hosted travel and trip planner with real-time collaboration, interactive maps, budgets, and packing lists, plus built-in OpenID Connect single sign-on with discovery, PKCE, id_token verification, automatic account creation, and an SSO-only login mode.",
+      "documentation_url": "https://github.com/liketrek/TREK/wiki/OIDC-SSO"
+    },
+    {
       "name": "Trip",
       "category": "Travel & maps",
       "project_url": "https://itskovacs.github.io/trip/",
@@ -1178,6 +1190,66 @@
       "license": "AGPL-3.0",
       "description": "A self-hosted Linux patch management and fleet automation platform with OpenID Connect single sign-on, including automatic user provisioning, group-to-role mapping, and SSO-only enforcement.",
       "documentation_url": "https://docs.patchmon.net/docs/patchmon-admin-guide#oidc--sso"
+    },
+    {
+      "name": "OpenCloud",
+      "category": "File sync & collaboration",
+      "project_url": "https://opencloud.eu",
+      "github_url": "https://github.com/opencloud-eu/opencloud",
+      "logo_url": "https://raw.githubusercontent.com/opencloud-eu/opencloud/main/services/web/assets/themes/opencloud/assets/logo.svg",
+      "license": "Apache-2.0",
+      "description": "An open-source file sync and sharing platform that authenticates users via OpenID Connect using its embedded identity provider or an external one such as Keycloak.",
+      "documentation_url": "https://docs.opencloud.eu/docs/stable/admin/configuration/authentication-and-user-management/external-idp"
+    },
+    {
+      "name": "AirTrail",
+      "category": "Travel & maps",
+      "project_url": "https://airtrail.johan.ohly.dk/",
+      "github_url": "https://github.com/johanohly/AirTrail",
+      "logo_url": "https://raw.githubusercontent.com/johanohly/AirTrail/main/static/favicon.svg",
+      "license": "GPL-3.0",
+      "description": "A self-hosted, open-source personal flight-tracking system with built-in OIDC/OAuth2 single sign-on configurable in the settings UI or via environment variables, including auto-registration and SSO-only login.",
+      "documentation_url": "https://airtrail.johan.ohly.dk/docs/features/oauth"
+    },
+    {
+      "name": "Dawarich",
+      "category": "Travel & maps",
+      "project_url": "https://dawarich.app",
+      "github_url": "https://github.com/Freika/dawarich",
+      "logo_url": "https://raw.githubusercontent.com/Freika/dawarich/master/app/assets/images/logo.svg",
+      "license": "AGPL-3.0",
+      "description": "A self-hosted location-history tracker (a Google Timeline alternative) that supports OpenID Connect sign-in with discovery or manual endpoints, auto-registration, account linking, and optional PKCE.",
+      "documentation_url": "https://dawarich.app/docs/environment-variables-and-settings"
+    },
+    {
+      "name": "Norish",
+      "category": "Recipe management",
+      "project_url": "https://norish.dev",
+      "github_url": "https://github.com/norish-recipes/norish",
+      "logo_url": "https://raw.githubusercontent.com/norish-recipes/norish/main/apps/landing/public/logo.svg",
+      "license": "AGPL-3.0",
+      "description": "A realtime, self-hosted recipe app for families and friends with OpenID Connect single sign-on, claim-based group mapping for admin and household roles, and configurable scopes.",
+      "documentation_url": "https://docs.norish.dev/configuration/authentication/"
+    },
+    {
+      "name": "SparkyFitness",
+      "category": "Health & wellbeing",
+      "project_url": "https://codewithcj.github.io/SparkyFitness/",
+      "github_url": "https://github.com/CodeWithCJ/SparkyFitness",
+      "logo_url": "https://raw.githubusercontent.com/CodeWithCJ/SparkyFitness/main/docs/public/logo.png",
+      "license": "MIT",
+      "description": "A self-hosted food, fitness, water, and health tracker for families that supports multiple OpenID Connect providers configured through its admin UI, with optional automatic user registration.",
+      "documentation_url": "https://codewithcj.github.io/SparkyFitness/administration/oauth-authentication"
+    },
+    {
+      "name": "Tududi",
+      "category": "Project & task management",
+      "project_url": "https://tududi.com/",
+      "github_url": "https://github.com/chrisvel/tududi",
+      "logo_url": "https://raw.githubusercontent.com/chrisvel/tududi/main/public/favicon-48.png",
+      "license": "MIT",
+      "description": "A self-hosted task, project, and notes manager with OIDC single sign-on for providers such as Google, Okta, Keycloak, Authentik, PocketID, and Azure AD, including automatic account provisioning.",
+      "documentation_url": "https://docs.tududi.com/getting-started/sso-oidc"
     },
     {
       "name": "Pelican",

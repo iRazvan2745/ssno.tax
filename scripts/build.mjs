@@ -112,6 +112,29 @@ const renderNotes = (notes = []) => {
     </aside>`;
 };
 
+const renderRejected = (rejected = []) => {
+  if (!rejected.length) return "";
+
+  const sorted = [...rejected].sort((a, b) => a.name.localeCompare(b.name));
+
+  return `
+    <section class="rejected-section" aria-labelledby="rejected-heading">
+      <h2 id="rejected-heading">Rejected applications (${sorted.length})</h2>
+      <p class="rejected-intro">These applications were considered but do not meet the admission criterion: the free self-hosted edition must support OIDC login without a paid SSO add-on. Editions and plans change, so re-check before relying on any of these.</p>
+      <dl class="rejected-list">
+        ${sorted
+          .map(
+            (entry) => `
+        <div class="rejected-item">
+          <dt>${entry.project_url ? externalLink(entry.project_url, entry.name) : escapeHtml(entry.name)}</dt>
+          <dd>${escapeHtml(entry.reason)}</dd>
+        </div>`,
+          )
+          .join("")}
+      </dl>
+    </section>`;
+};
+
 const renderRepoHealth = (health = {}) => {
   const color = health.status === "active" ? "green" : health.status === "untracked" ? "gray" : "red";
   const label = health.status === "active" ? "Active repository" : health.status === "low" ? "Low activity" : health.status === "untracked" ? "No GitHub repository" : "Unable to check repository";
@@ -183,6 +206,17 @@ const shell = await readFile(shellPath, "utf8");
 
 if (!Array.isArray(data.applications)) {
   throw new Error("oidc-applications.json must contain an applications array");
+}
+
+if (data.rejected !== undefined) {
+  if (!Array.isArray(data.rejected)) {
+    throw new Error("oidc-applications.json must contain a rejected array when the key is present");
+  }
+  for (const entry of data.rejected) {
+    if (!entry.name || !entry.reason) {
+      throw new Error("Every rejected entry must have a name and reason");
+    }
+  }
 }
 
 const githubRepositoryFromUrl = (value) => {
@@ -284,6 +318,7 @@ const generatedContent = `
     ${renderFilters(categoryEntries)}
     ${categoryEntries.map(renderCategory).join("\n")}
     ${renderNotes(data.notes)}
+    ${renderRejected(data.rejected)}
   </div>`;
 
 const markerCount = shell.split(marker).length - 1;

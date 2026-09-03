@@ -899,6 +899,7 @@
       "category": "Dashboards",
       "project_url": "https://gethomepage.dev/",
       "github_url": "https://github.com/gethomepage/homepage",
+      "logo_url": "https://github.com/gethomepage/homepage/blob/main/public/android-chrome-192x192.png",
       "license": "GPL-3.0",
       "description": "A self-hosted, highly customizable homepage dashboard whose built-in authentication gate supports OpenID Connect login alongside a simple password.",
       "documentation_url": "https://gethomepage.dev/installation/#authentication"

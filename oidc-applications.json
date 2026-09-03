@@ -484,7 +484,7 @@
       "category": "Password management",
       "project_url": "https://github.com/dani-garcia/vaultwarden",
       "github_url": "https://github.com/dani-garcia/vaultwarden",
-      "logo_url": "https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/resources/vaultwarden-logo.svg",
+      "logo_url": "https://raw.githubusercontent.com/dani-garcia/vaultwarden/refs/heads/main/resources/vaultwarden-icon.svg",
       "license": "AGPL-3.0-only",
       "description": "An unofficial Bitwarden-compatible server with self-hosted OpenID Connect SSO, account provisioning, and optional SSO-only login.",
       "documentation_url": "https://github.com/dani-garcia/vaultwarden/wiki/Enabling-SSO"
@@ -504,7 +504,7 @@
       "category": "Remote access & VPN",
       "project_url": "https://netbird.io/",
       "github_url": "https://github.com/netbirdio/netbird",
-      "logo_url": "https://raw.githubusercontent.com/netbirdio/netbird/main/proxy/web/src/assets/netbird-full.svg",
+      "logo_url": "https://raw.githubusercontent.com/netbirdio/netbird/refs/heads/main/proxy/web/src/assets/netbird.svg",
       "license": "BSD-3-Clause / AGPL-3.0",
       "description": "An open-source WireGuard-based mesh VPN with a self-hosted management service and generic OIDC login for the management dashboard and clients.",
       "documentation_url": "https://docs.netbird.io/selfhosted/identity-providers/generic-oidc"
@@ -573,6 +573,7 @@
       "category": "Container management",
       "project_url": "https://komo.do",
       "github_url": "https://github.com/moghtech/komodo",
+      "logo_url": "https://raw.githubusercontent.com/moghtech/komodo/refs/heads/main/docsite/static/img/komodo-512x512.png",
       "license": "GPL 3",
       "description": "A build and deployment system managing unlimited hosts based on Docker Compose and optionally Swarm with built-in OAuth2 authentication that works with any OIDC provider.",
       "documentation_url": "https://komo.do/docs/setup/advanced#oidc--oauth2"
@@ -898,6 +899,7 @@
       "category": "Dashboards",
       "project_url": "https://gethomepage.dev/",
       "github_url": "https://github.com/gethomepage/homepage",
+      "logo_url": "https://raw.githubusercontent.com/gethomepage/homepage/refs/heads/main/public/android-chrome-192x192.png",
       "license": "GPL-3.0",
       "description": "A self-hosted, highly customizable homepage dashboard whose built-in authentication gate supports OpenID Connect login alongside a simple password.",
       "documentation_url": "https://gethomepage.dev/installation/#authentication"
@@ -1257,6 +1259,16 @@
       "license": "AGPL-3.0",
       "description": "A self-hosted game server management panel with free OAuth login and a first-party generic OIDC plugin that supports any custom OpenID Connect provider.",
       "documentation_url": "https://github.com/pelican/plugins/tree/main/generic-oidc-providers"
+    },
+    {
+      "name": "Arcane",
+      "category": "Container management",
+      "project_url": "https://getarcane.app",
+      "github_url": "https://github.com/getarcaneapp/arcane",
+      "logo_url": "https://raw.githubusercontent.com/getarcaneapp/website/refs/heads/main/static/img/logo.svg",
+      "license": "BSD 3-Clause",
+      "description": "Modern Docker Management, Designed for Everyone.",
+      "documentation_url": "https://getarcane.app/docs/authentication/sso"
     }
   ]
 }

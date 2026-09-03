@@ -504,7 +504,7 @@
       "category": "Remote access & VPN",
       "project_url": "https://netbird.io/",
       "github_url": "https://github.com/netbirdio/netbird",
-      "logo_url": "https://raw.githubusercontent.com/netbirdio/netbird/main/proxy/web/src/assets/netbird-full.svg",
+      "logo_url": "https://raw.githubusercontent.com/netbirdio/netbird/refs/heads/main/proxy/web/src/assets/netbird.svg",
       "license": "BSD-3-Clause / AGPL-3.0",
       "description": "An open-source WireGuard-based mesh VPN with a self-hosted management service and generic OIDC login for the management dashboard and clients.",
       "documentation_url": "https://docs.netbird.io/selfhosted/identity-providers/generic-oidc"

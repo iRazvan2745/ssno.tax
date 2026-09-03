@@ -1257,6 +1257,16 @@
       "license": "AGPL-3.0",
       "description": "A self-hosted game server management panel with free OAuth login and a first-party generic OIDC plugin that supports any custom OpenID Connect provider.",
       "documentation_url": "https://github.com/pelican/plugins/tree/main/generic-oidc-providers"
+    },
+    {
+      "name": "Arcane",
+      "category": "Container management",
+      "project_url": "https://getarcane.app",
+      "github_url": "https://github.com/getarcaneapp/arcane",
+      "logo_url": "https://github.com/getarcaneapp/website/blob/main/static/img/logo.svg",
+      "license": "BSD 3-Clause",
+      "description": "Modern Docker Management, Designed for Everyone.",
+      "documentation_url": "https://getarcane.app/docs/authentication/sso"
     }
   ]
 }
